@@ -1,0 +1,92 @@
+sum_even/1000           time:   [419.43 ns 431.29 ns 446.88 ns]
+                        change: [-19.175% -17.168% -14.984%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+sum_even/10000          time:   [4.3028 µs 4.4870 µs 4.7153 µs]
+                        change: [-9.7540% -5.0907% -0.2195%] (p = 0.04 < 0.05)
+                        Change within noise threshold.
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high mild
+sum_even/50000          time:   [20.079 µs 20.488 µs 20.969 µs]
+                        change: [-26.433% -23.155% -19.778%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  7 (7.00%) high severe
+
+fib/20                  time:   [21.271 ns 21.977 ns 22.783 ns]
+                        change: [-99.933% -99.930% -99.926%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 6 outliers among 100 measurements (6.00%)
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+fib/25                  time:   [24.589 ns 25.255 ns 26.121 ns]
+                        change: [-99.993% -99.993% -99.992%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 9 outliers among 100 measurements (9.00%)
+  2 (2.00%) high mild
+  7 (7.00%) high severe
+fib/32                  time:   [31.838 ns 32.450 ns 33.289 ns]
+                        change: [-100.000% -100.000% -100.000%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+
+dedup/500               time:   [39.503 µs 40.195 µs 41.029 µs]
+                        change: [-75.135% -74.712% -74.279%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 13 outliers among 100 measurements (13.00%)
+  6 (6.00%) high mild
+  7 (7.00%) high severe
+dedup/1000              time:   [79.232 µs 80.206 µs 81.307 µs]
+                        change: [-88.264% -87.765% -87.244%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+dedup/5000              time:   [413.04 µs 424.74 µs 438.19 µs]
+                        change: [-97.377% -97.269% -97.161%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+
+normalize/1000          time:   [2.5670 µs 2.6422 µs 2.7458 µs]
+                        change: [+0.3852% +2.7638% +5.4731%] (p = 0.04 < 0.05)
+                        Change within noise threshold.
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+normalize/50000         time:   [105.94 µs 109.57 µs 113.25 µs]
+                        change: [+11.992% +14.783% +17.701%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 11 outliers among 100 measurements (11.00%)
+  8 (8.00%) high mild
+  3 (3.00%) high severe
+normalize/500000        time:   [942.09 µs 946.97 µs 952.59 µs]
+                        change: [+2.5121% +4.3625% +6.2460%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 9 outliers among 100 measurements (9.00%)
+  5 (5.00%) high mild
+  4 (4.00%) high severe
+
+average_positive/1000   time:   [2.2386 µs 2.3424 µs 2.4498 µs]
+                        change: [-2.9281% +1.2613% +5.7239%] (p = 0.57 > 0.05)
+                        No change in performance detected.
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+average_positive/10000  time:   [19.100 µs 19.808 µs 20.579 µs]
+                        change: [+40.525% +45.103% +49.879%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high mild
+average_positive/50000  time:   [72.892 µs 73.968 µs 75.182 µs]
+                        change: [-0.2338% +3.8758% +8.2669%] (p = 0.07 > 0.05)
+                        No change in performance detected.
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+

@@ -1,0 +1,131 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /root/perfomance-project/broken-app/Cargo.toml
+workspace: /root/perfomance-project/Cargo.toml
+   Compiling broken-app v0.1.0 (/root/perfomance-project/broken-app)
+    Finished `bench` profile [optimized] target(s) in 2.77s
+     Running benches/criterion.rs (/root/perfomance-project/target/release/deps/criterion-8a181a7e376a9fea)
+Gnuplot not found, using plotters backend
+Benchmarking sum_even/1000
+Benchmarking sum_even/1000: Warming up for 3.0000 s
+Benchmarking sum_even/1000: Collecting 100 samples in estimated 5.0004 s (8.7M iterations)
+Benchmarking sum_even/1000: Analyzing
+sum_even/1000           time:   [517.91 ns 528.20 ns 539.68 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+Benchmarking sum_even/10000
+Benchmarking sum_even/10000: Warming up for 3.0000 s
+Benchmarking sum_even/10000: Collecting 100 samples in estimated 5.0188 s (1.0M iterations)
+Benchmarking sum_even/10000: Analyzing
+sum_even/10000          time:   [4.9423 µs 5.0522 µs 5.1787 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+Benchmarking sum_even/50000
+Benchmarking sum_even/50000: Warming up for 3.0000 s
+Benchmarking sum_even/50000: Collecting 100 samples in estimated 5.0740 s (177k iterations)
+Benchmarking sum_even/50000: Analyzing
+sum_even/50000          time:   [28.378 µs 29.470 µs 30.631 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking fib/20
+Benchmarking fib/20: Warming up for 3.0000 s
+Benchmarking fib/20: Collecting 100 samples in estimated 5.1354 s (162k iterations)
+Benchmarking fib/20: Analyzing
+fib/20                  time:   [29.367 µs 29.902 µs 30.535 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) high mild
+  9 (9.00%) high severe
+Benchmarking fib/25
+Benchmarking fib/25: Warming up for 3.0000 s
+Benchmarking fib/25: Collecting 100 samples in estimated 5.0079 s (15k iterations)
+Benchmarking fib/25: Analyzing
+fib/25                  time:   [330.10 µs 349.56 µs 372.82 µs]
+Found 17 outliers among 100 measurements (17.00%)
+  1 (1.00%) high mild
+  16 (16.00%) high severe
+Benchmarking fib/32
+Benchmarking fib/32: Warming up for 3.0000 s
+Benchmarking fib/32: Collecting 100 samples in estimated 5.8021 s (600 iterations)
+Benchmarking fib/32: Analyzing
+fib/32                  time:   [8.8529 ms 8.9959 ms 9.1643 ms]
+Found 18 outliers among 100 measurements (18.00%)
+  8 (8.00%) high mild
+  10 (10.00%) high severe
+
+Benchmarking dedup/500
+Benchmarking dedup/500: Warming up for 3.0000 s
+Benchmarking dedup/500: Collecting 100 samples in estimated 5.8218 s (35k iterations)
+Benchmarking dedup/500: Analyzing
+dedup/500               time:   [155.87 µs 158.50 µs 161.50 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+Benchmarking dedup/1000
+Benchmarking dedup/1000: Warming up for 3.0000 s
+Benchmarking dedup/1000: Collecting 100 samples in estimated 6.7149 s (10k iterations)
+Benchmarking dedup/1000: Analyzing
+dedup/1000              time:   [645.68 µs 667.04 µs 691.23 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  5 (5.00%) high mild
+  3 (3.00%) high severe
+Benchmarking dedup/5000
+Benchmarking dedup/5000: Warming up for 3.0000 s
+Benchmarking dedup/5000: Collecting 100 samples in estimated 5.5340 s (400 iterations)
+Benchmarking dedup/5000: Analyzing
+dedup/5000              time:   [14.706 ms 15.175 ms 15.698 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  6 (6.00%) high mild
+  7 (7.00%) high severe
+
+Benchmarking normalize/1000
+Benchmarking normalize/1000: Warming up for 3.0000 s
+Benchmarking normalize/1000: Collecting 100 samples in estimated 5.0050 s (2.0M iterations)
+Benchmarking normalize/1000: Analyzing
+normalize/1000          time:   [2.5009 µs 2.5333 µs 2.5697 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+Benchmarking normalize/50000
+Benchmarking normalize/50000: Warming up for 3.0000 s
+Benchmarking normalize/50000: Collecting 100 samples in estimated 5.1988 s (56k iterations)
+Benchmarking normalize/50000: Analyzing
+normalize/50000         time:   [90.750 µs 91.780 µs 92.914 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+Benchmarking normalize/500000
+Benchmarking normalize/500000: Warming up for 3.0000 s
+Benchmarking normalize/500000: Collecting 100 samples in estimated 9.5787 s (10k iterations)
+Benchmarking normalize/500000: Analyzing
+normalize/500000        time:   [906.77 µs 933.76 µs 965.50 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking average_positive/1000
+Benchmarking average_positive/1000: Warming up for 3.0000 s
+Benchmarking average_positive/1000: Collecting 100 samples in estimated 5.0112 s (2.2M iterations)
+Benchmarking average_positive/1000: Analyzing
+average_positive/1000   time:   [2.1863 µs 2.3378 µs 2.4927 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  6 (6.00%) high mild
+  5 (5.00%) high severe
+Benchmarking average_positive/10000
+Benchmarking average_positive/10000: Warming up for 3.0000 s
+Benchmarking average_positive/10000: Collecting 100 samples in estimated 5.0423 s (338k iterations)
+Benchmarking average_positive/10000: Analyzing
+average_positive/10000  time:   [13.840 µs 14.081 µs 14.455 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+Benchmarking average_positive/50000
+Benchmarking average_positive/50000: Warming up for 3.0000 s
+Benchmarking average_positive/50000: Collecting 100 samples in estimated 5.0122 s (71k iterations)
+Benchmarking average_positive/50000: Analyzing
+average_positive/50000  time:   [75.198 µs 78.897 µs 82.727 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  8 (8.00%) high mild
+
