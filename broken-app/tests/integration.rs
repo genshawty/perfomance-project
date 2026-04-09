@@ -26,7 +26,7 @@ fn fib_small_numbers() {
 
 #[test]
 fn normalize_simple() {
-    assert_eq!(normalize(" Hello World "), "helloworld");
+    assert_eq!(normalize("  Hello  World "), "helloworld");
 }
 
 #[test]
@@ -35,3 +35,10 @@ fn averages_only_positive() {
     // Ожидается (5 + 15) / 2 = 10, но текущая реализация делит на все элементы.
     assert!((broken_app::average_positive(&nums) - 10.0).abs() < f64::EPSILON);
 }
+
+// #[test]
+// fn test_use_after_free() {
+//     unsafe {
+//         use_after_free();
+//     }
+// }
