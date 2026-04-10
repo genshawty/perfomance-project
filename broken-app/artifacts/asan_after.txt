@@ -1,0 +1,16 @@
+ASAN (AddressSanitizer) — broken-app (после рефакторинга)
+Команда: RUSTFLAGS="-Zsanitizer=address" cargo +nightly test -p broken-app --target x86_64-unknown-linux-gnu
+
+Результат: OK
+
+running 6 tests
+test averages_only_positive ... ok
+test counts_non_zero_bytes ... ok
+test dedup_preserves_uniques ... ok
+test normalize_simple ... ok
+test fib_small_numbers ... ok
+test sums_even_numbers ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+Ошибок памяти не обнаружено.

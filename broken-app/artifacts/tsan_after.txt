@@ -1,0 +1,16 @@
+TSAN (ThreadSanitizer) — broken-app (после рефакторинга)
+Команда: RUSTFLAGS="-Zsanitizer=thread" cargo +nightly test -p broken-app --lib --tests -Zbuild-std --target x86_64-unknown-linux-gnu
+
+Результат: OK
+
+running 6 tests
+test averages_only_positive ... ok
+test counts_non_zero_bytes ... ok
+test dedup_preserves_uniques ... ok
+test fib_small_numbers ... ok
+test normalize_simple ... ok
+test sums_even_numbers ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+Гонок данных не обнаружено.
